@@ -1,0 +1,44 @@
+{
+  "name": "support-api",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint src/**/*.js",
+    "format:check": "prettier --check \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "jest --coverage",
+    "seed": "node scripts/seed.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.js"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.4"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4"
+  }
+}
