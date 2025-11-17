@@ -197,7 +197,7 @@ Le projet respecte le workflow demandé :
 * Toutes les captures du projet
 * Badge CI
 
- *Insérer ici la capture PR3*
+ ![alt text](PR3.png)
 
 ---
 
@@ -219,10 +219,9 @@ Les règles suivantes ont été appliquées sur `main` :
 
 # Badge CI
 
-*(À ajouter après merge final)*
 
 ```
-![CI](https://github.com/<USERNAME>/<REPO>/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/hrakkaz/support-api/actions/workflows/ci.yml/badge.svg)](https://github.com/hrakkaz/support-api/actions/workflows/ci.yml)
 ```
 
 
